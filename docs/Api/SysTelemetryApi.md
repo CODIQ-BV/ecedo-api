@@ -18,10 +18,17 @@ Opvragen telemetrie van productiemiddel door middel van het ID van de aansluitin
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysTelemetryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $id = "id_example"; // string | Connection GUID of EAN
 $start_date = new \DateTime("2013-10-20"); // \DateTime | Vanaf datum (dag)
@@ -50,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
@@ -69,10 +76,17 @@ Opvragen telemetrie aan de hand van een EAN
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysTelemetryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $ean = "ean_example"; // string | EAN als referentie van de telemetrie
 $start_date = new \DateTime("2013-10-20"); // \DateTime | Vanaf datum (dag)
@@ -101,7 +115,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 

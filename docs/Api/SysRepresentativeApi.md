@@ -20,10 +20,17 @@ Verwijderen van een verkoper
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysRepresentativeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $representative_id = "representative_id_example"; // string | 
 
@@ -48,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
@@ -67,10 +74,17 @@ Opvragen verkopers
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysRepresentativeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 
 try {
@@ -91,7 +105,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
@@ -110,10 +124,17 @@ Aanmaken van een verkoper
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysRepresentativeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $representative = new \Swagger\Client\Model\EcedoERPCRMInterfaceApiRepresentativePostData(); // \Swagger\Client\Model\EcedoERPCRMInterfaceApiRepresentativePostData | 
 
@@ -138,7 +159,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
@@ -157,10 +178,17 @@ Wijzigen van een verkoper
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysRepresentativeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $representative_id = "representative_id_example"; // string | 
 $representative = new \Swagger\Client\Model\EcedoERPCRMInterfaceApiRepresentativePutData(); // \Swagger\Client\Model\EcedoERPCRMInterfaceApiRepresentativePutData | 
@@ -187,7 +215,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 

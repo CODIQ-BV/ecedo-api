@@ -26,10 +26,17 @@ Met behulp van deze API kan een geannuleerd (status `Geannuleerd`) factuuritem (
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysBillingItemsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $billing_item_id = "billing_item_id_example"; // string | Guid van het factuuritem (BillingItem)
 $organization_id = "organization_id_example"; // string | 
@@ -58,7 +65,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
@@ -79,10 +86,17 @@ Met behulp van deze API kan een factuuritem (`BillingItem`) worden geannuleerd.<
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysBillingItemsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $billing_item_id = "billing_item_id_example"; // string | Guid van het factuuritem (BillingItem)
 $comment = "comment_example"; // string | Verplichte reden waarom het factuuritem geannuleerd is
@@ -111,7 +125,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
@@ -132,10 +146,17 @@ Met behulp van deze API kan een factuuritem (`BillingItem`) worden verwijderd. W
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysBillingItemsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $billing_item_id = "billing_item_id_example"; // string | Guid van het factuuritem (BillingItem)
 $organization_id = "organization_id_example"; // string | 
@@ -164,7 +185,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
@@ -185,10 +206,17 @@ Factuuritemgroepen (`BillingItemGroups`) zijn voorgedefinieerde kortingen die aa
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysBillingItemsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $start_date = new \DateTime("2013-10-20"); // \DateTime | Hierdoor worden alleen factuuritemgroepen teruggegeven die geldig (actief) zijn vanaf de opgegeven datum
 $end_date = new \DateTime("2013-10-20"); // \DateTime | Hierdoor worden alleen factuuritemgroepen teruggegeven die geldig (actief) zijn tot de opgegeven datum
@@ -217,7 +245,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
@@ -236,10 +264,17 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysBillingItemsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $organization_id = "organization_id_example"; // string | 
 $billing_item_id = "billing_item_id_example"; // string | 
@@ -266,7 +301,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
@@ -287,10 +322,17 @@ Met behulp van deze API kunnen de factuuritems (`BillingItems`) van een klant op
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysBillingItemsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $organization_id = "organization_id_example"; // string | Guid van de klant (Organization)
 $external_reference = "external_reference_example"; // string | Een factuuritem kan aangemaakt worden met een externalReference. Als deze parameter gevuld is worden alleen factuuritems teruggegeven met een identieke externalReference
@@ -321,7 +363,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
@@ -342,10 +384,17 @@ Met behulp van deze API kan een factuuritem (`BillingItem`) aangemaakt worden.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysBillingItemsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $organization_id = "organization_id_example"; // string | Guid van de klant (Organization)
 $billing_item = new \Swagger\Client\Model\EcedoERPCRMInterfaceApiBillingItemPostData(); // \Swagger\Client\Model\EcedoERPCRMInterfaceApiBillingItemPostData | De data van het factuuritem, zie het object-model voor meer informatie
@@ -372,7 +421,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
@@ -393,10 +442,17 @@ Met behulp van deze API kan een factuuritem (`BillingItem`) gewijzigd worden.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysBillingItemsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $billing_item_id = "billing_item_id_example"; // string | Guid van het factuuritem (BillingItem)
 $billing_item = new \Swagger\Client\Model\EcedoERPCRMInterfaceApiBillingItemPutData(); // \Swagger\Client\Model\EcedoERPCRMInterfaceApiBillingItemPutData | De data van het factuuritem, zie het object-model voor meer informatie
@@ -425,7 +481,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 

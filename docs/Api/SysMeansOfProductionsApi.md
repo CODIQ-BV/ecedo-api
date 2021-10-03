@@ -24,10 +24,17 @@ GET https://server/sysapi/v1.0/meansofproductions
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysMeansOfProductionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 
 try {
@@ -48,7 +55,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
@@ -67,10 +74,17 @@ Opvragen van een productiemiddelaansluiting voor een productiemiddel aan de hand
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysMeansOfProductionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $means_of_production_id = "means_of_production_id_example"; // string | 
 $means_of_production_connection_id = "means_of_production_connection_id_example"; // string | 
@@ -97,7 +111,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
@@ -116,10 +130,17 @@ Genereer een contract voorstel voor een productiemiddel
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysMeansOfProductionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $means_of_production_id = "means_of_production_id_example"; // string | 
 
@@ -144,7 +165,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
@@ -163,10 +184,17 @@ Opvragen van een productiemiddel aan de hand van het productiemiddel id
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysMeansOfProductionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $organization_id = "organization_id_example"; // string | 
 $means_of_production_id = "means_of_production_id_example"; // string | 
@@ -193,7 +221,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
@@ -212,10 +240,17 @@ Opvragen van een productiemiddelaansluiting aan de hand van een productiemiddela
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysMeansOfProductionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $means_of_production_connection_id = "means_of_production_connection_id_example"; // string | 
 
@@ -240,7 +275,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
@@ -261,10 +296,17 @@ GET https://server/sysapi/v1.0/meansofproductionconnections
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysMeansOfProductionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $means_of_production_id = "means_of_production_id_example"; // string | 
 
@@ -289,7 +331,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 

@@ -20,10 +20,17 @@ Afhankelijk van het invoice type krijg je verschillende resultaten terug. De bas
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysInvoiceDataSetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $organization_id = "organization_id_example"; // string | 
 $invoice_id = "invoice_id_example"; // string | 
@@ -50,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
@@ -71,10 +78,17 @@ Deze versie ondersteund enkel Purchase facturen van het subtype EnergyPurchase e
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysInvoiceDataSetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $organization_id = "organization_id_example"; // string | 
 $invoice_type = "invoice_type_example"; // string | 
@@ -107,7 +121,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 

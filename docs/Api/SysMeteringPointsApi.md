@@ -23,10 +23,17 @@ Dit is een passthough-API naar het Contract Einde Register (CER) van EDSN<br /> 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysMeteringPointsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $ean = "ean_example"; // string | EAN van de aansluiting
 $process_settings = new \Swagger\Client\Model\EcedoERPCRMInterfaceApiPreNotifyContractProcessSettings(); // \Swagger\Client\Model\EcedoERPCRMInterfaceApiPreNotifyContractProcessSettings | Process instellingen, het object moet bestaan maar mag leeg zijn. Alle velden zijn optioneel. Zie het object-model voor meer details over de verschillende variabelen
@@ -53,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
@@ -74,10 +81,17 @@ Met behulp van deze API kunnen de klantsleutels in het C-AR bijgewerkt worden, b
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysMeteringPointsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $ean = "ean_example"; // string | EAN code van de aansluiting
 $post_data = new \Swagger\Client\Model\EcedoERPCRMInterfaceApiClientKeyCreateData(); // \Swagger\Client\Model\EcedoERPCRMInterfaceApiClientKeyCreateData | De data van de klantsleutel(s), zie het object-model voor meer informatie
@@ -104,7 +118,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
@@ -125,10 +139,17 @@ Dit is een passthough-API naar het Centraal Aansluitingen Register (C-AR) van ED
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysMeteringPointsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $ean = "ean_example"; // string | De EAN code van de aansluiting
 $include_cer = true; // bool | Default: true. Met behulp van deze parameter kan aangegeven worden of het contracteinddatum uit het CER opgevraagd moet worden. Aan de hand daarvan zal de `FirstAllowedSwitchDate` in de response gevuld worden
@@ -159,7 +180,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
@@ -180,10 +201,17 @@ Dit is een passthough-API naar het Centraal Aansluitingen Register (C-AR) van ED
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysMeteringPointsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $ean = "ean_example"; // string | EAN code van de aansluiting
 $mandate_id = "mandate_id_example"; // string | Key van de leverancier waarmee het klantmandaat gevonden kan worden
@@ -217,7 +245,7 @@ void (empty response body)
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
@@ -238,10 +266,17 @@ Dit is een passthough-API naar het Centraal Aansluitingen Register (C-AR) van ED
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
+// Configure HTTP basic authorization: API Key - 1
+$config = Swagger\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
+
+
 $apiInstance = new Swagger\Client\Api\SysMeteringPointsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $market_segment = "market_segment_example"; // string | Marktsegment
 $ean = "ean_example"; // string | EAN code
@@ -274,7 +309,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[API Key - 1](../../README.md#API Key - 1)
 
 ### HTTP request headers
 
